@@ -80,11 +80,11 @@ class MovieDetailPage extends StatelessWidget {
                   Text("TMDB Score",style: textTheme.bodyText1,),
                   Text("${movie.voteAverage}/10 from ${movie.voteCount} votes",style: textTheme.bodyText2),
                   SizedBox(height: 16,),
-                  Text("Popularity",style: textTheme.bodyText1,),
+                  Text("Original Language",style: textTheme.bodyText1,),
                   Text("${movie.originalLanguage}",style: textTheme.bodyText2),
                   SizedBox(height: 16,),
-                  Text("Popularity",style: textTheme.bodyText1,),
-                  Text("${movie.adult}",style: textTheme.bodyText2),
+                  Text("Adult Rated?",style: textTheme.bodyText1,),
+                  Text("${movie.adult!? "Yes" : "No"}",style: textTheme.bodyText2),
                   SizedBox(height: 100,)
 
                 ],
