@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:movies/movies/bloc.dart';
 import 'package:movies/movies/event.dart';
-import 'package:movies/movies/view.dart';
+import 'package:movies/movies/movie_list.dart';
 
 import 'movies/movie_detail.dart';
 
@@ -30,8 +30,18 @@ class MyApp extends StatelessWidget {
         // or simply save your changes to "hot reload" in a Flutter IDE).
         // Notice that the counter didn't reset back to zero; the application
         // is not restarted.
-        primarySwatch: Colors.red,
+        primarySwatch: Colors.grey,
       ),
+          darkTheme: ThemeData(
+            brightness: Brightness.dark,
+            /* dark theme settings */
+          ),
+          themeMode: ThemeMode.dark,
+          /* ThemeMode.system to follow system theme,
+         ThemeMode.light for light theme,
+         ThemeMode.dark for dark theme
+      */
+          debugShowCheckedModeBanner: false,
       initialRoute: '/',
       routes: {
         '/': (context) => MoviesPage(),

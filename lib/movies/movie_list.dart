@@ -17,18 +17,22 @@ class MoviesPage extends StatelessWidget {
 
           return Scaffold(
             appBar: AppBar(
-              title: Text('Movies List'),
+              title: Text('Explore Movies'),
             ),
+
             body: SafeArea(
               child: Stack(
                 children: [
                   Container(
-                    color: Colors.grey[300],
-
+                    decoration: BoxDecoration(
+                      // boxShadow: BoxShadow(
+                      //   color: Colors.g
+                      // )
+                    ),
                     child: Column(
                       children: [
                         Container(
-                          padding: EdgeInsets.symmetric(vertical: 4),
+                          padding: EdgeInsets.symmetric(vertical: 4,horizontal: 16),
                           child: Row(
                             mainAxisAlignment: MainAxisAlignment.end,
                             children: [
